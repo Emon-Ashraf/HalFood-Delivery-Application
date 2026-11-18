@@ -1,66 +1,19 @@
-# HalFood — Halal Food Delivery Application
+# HalFood Android App
 
-**HalFood** is a full-stack halal food delivery system (Android + backend) created to solve a common problem: most delivery apps don’t provide halal-specific support, so users must manually verify halal compliance. HalFood separates halal meals and halal meat products clearly and focuses on **trust, convenience, and religious compliance**.
+An Android prototype for a halal food marketplace. The current app implements the welcome, onboarding, and authentication screens for a planned shopping experience covering prepared meals and meat products.
 
-## Live Demo (GitHub Pages)
-- https://emon-ashraf.github.io/HalFood-Delivery-Application/
+## Features
 
-## Project Goal
-Build a complete halal food delivery platform with:
-- **Android mobile client**
-- **Secure backend API**
-- **Clean architecture principles**
+- Welcome and onboarding screens introduce the marketplace concept.
+- Users can navigate between sign-in and registration forms.
+- The authentication forms are UI prototypes without backend calls.
 
-## Key Features
-- Verified halal meals from local restaurants
-- Fresh halal meats from certified butchers
-- Secure authentication (JWT)
-- Shop registration and management (restaurant/butcher)
-- Product creation and management (dish/meat items)
-- Basket (one basket per shop per user)
-- Order placement flow
+## Tech Stack
 
-## Target Users (Roles)
-- **Customer** (halal food buyer)
-- **Vendor** (Restaurant / Butcher)
-- **Delivery Personnel**
-- **Administrator**
+Kotlin, Jetpack Compose, and Navigation Compose.
 
-## Core Domain Entities
-- User (role-based access)
-- Shop (Restaurant or Butcher)
-- Item (Dish or Meat product)
-- Basket (per shop per user)
-- Order (linked to one basket)
+## Getting Started
 
-## Technologies Used
-### Mobile Client
-- Kotlin
-- Jetpack Compose
-- Retrofit2
+Open the project in Android Studio with JDK 17 and Android SDK 35. Sync Gradle and run the `app` configuration on an emulator or device running Android 7.0 (API 24) or later.
 
-### Backend
-- ASP.NET Core Web API
-- Entity Framework Core
-- PostgreSQL
-- JWT Authentication
-
-## Architecture
-### Mobile (MVVM)
-- **View:** Jetpack Compose screens  
-- **ViewModel:** state & events  
-- **Repository/Model:** Retrofit, DataStore, DTO
-
-### Backend (Layered)
-- **Presentation:** Controllers  
-- **Business Logic:** Services  
-- **Data Access:** Repositories  
-- **DTOs:** Data Transfer Objects  
-
-## Getting Started (Run Locally)
-> Update these commands based on your actual project structure.
-
-### Clone
-```bash
-git clone https://github.com/Emon-Ashraf/HalFood-Delivery-Application.git
-cd HalFood-Delivery-Application
+The [project demo page](https://emon-ashraf.github.io/HalFood-Delivery-Application/) introduces the concept. The [HalFood API](https://github.com/Emon-Ashraf/HalFoodBackend) is maintained in a separate repository.
